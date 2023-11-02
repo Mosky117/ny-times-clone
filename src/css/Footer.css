@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: small;
+    flex: 1;
+}
+.footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+}
+.footer li{
+    margin-bottom: 10px;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.subscribe{
+    font-size: large;
+    font-weight: 800;
+}
+
+@media only screen and (min-device-width:250px) and (max-device-width: 960px) {
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}

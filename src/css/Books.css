@@ -1,0 +1,50 @@
+*{
+    background-color: rgba(0, 0, 0, 0.98);
+}
+.page{
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+.books-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 150px;
+    row-gap: 200px;
+}
+
+.content::after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid var(--color-stroke-tertiary,#C7C7C7);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    clear: both;
+    grid-column: 1/-1;
+}
+
+
+@media only screen and (min-device-width:961px){
+    .page{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-device-width:250px) and (max-device-width: 960px) {
+    .page{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+    .books-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 150px;
+        row-gap: 100px;
+    }
+}
