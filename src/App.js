@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Books from './pages/Books';
+import Home from './routes/Home';
+import Books from './routes/Books';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {

@@ -17,20 +17,21 @@ function MovieReviews(){
     },[]);
     
     return(
-        <section className='movies'>
-            {movies.map((review)=>(
-                <div className='reviews'> 
-                    <a href={review.web_url} key={review._id}>
-                        {review.headline && review.headline.main && (
-                            <h4>{review.headline.main}</h4>
-                        )}
-                        {review.multimedia && review.multimedia.length>0 &&(
-                            <img src={`https://www.nytimes.com/${review.multimedia[5].url}`} alt=''></img>
-                        )}
-                    </a>  
-                </div>
-            ))}
-            
+        <section className='movies-wrapper'>
+            <div className='movies'>
+                {movies.map((review)=>(
+                    <div className='reviews'> 
+                        <a href={review.web_url} key={review._id}>
+                            {review.headline && review.headline.main && (
+                                <h4>{review.headline.main}</h4>
+                            )}
+                            {review.multimedia && review.multimedia.length>0 &&(
+                                <img src={`https://www.nytimes.com/${review.multimedia[5].url}`} alt=''></img>
+                            )}
+                        </a>  
+                    </div>
+                ))}
+            </div>
         </section>
     )
 }
