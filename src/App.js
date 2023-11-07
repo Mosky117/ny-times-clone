@@ -9,7 +9,7 @@ function App() {
     <>
       <Navbar />
       <div>
-        <Routes>
+        <Routes basename={process.env.PUBLIC_URL}>
           <Route path='/' element={<Home/>}/>
           
           <Route path='/Books' element={<Books/>}/>
