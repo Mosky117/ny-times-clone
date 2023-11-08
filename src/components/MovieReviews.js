@@ -20,8 +20,8 @@ function MovieReviews(){
         <section className='movies-wrapper'>
             <div className='movies'>
                 {movies.map((review)=>(
-                    <div className='reviews'> 
-                        <a href={review.web_url} key={review._id}>
+                    <div className='reviews' key={review._id}> 
+                        <a href={review.web_url}>
                             {review.headline && review.headline.main && (
                                 <h4>{review.headline.main}</h4>
                             )}

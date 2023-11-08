@@ -18,10 +18,18 @@ function Stories(){
       fetchTopStories();
     },[]);
 
+    
+  function KeyGenerator() {
+    const timestamp = new Date().getTime();
+    const random = Math.floor(Math.random() * 1000);
+    const uniqueKey = `${timestamp}-${random}`;
+    return uniqueKey;
+  }
+
     return(
       <section className='second-news-container'>
           {topStories.map((topStory)=>(
-              <a href={topStory.url}>
+              <a href={topStory.url} key={KeyGenerator()}>
                   <h3>{topStory.title}</h3>
                   <p>{topStory.abstract}</p>
                   {topStory.multimedia && topStory.multimedia.length>0 &&(

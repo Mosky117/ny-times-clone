@@ -19,12 +19,12 @@ function BookReviews(){
     return(
         <section className='books-container'>
             {reviews.map((review)=>(
-                <div className='books-list'>
+                <div className='books-list' key={review.list_id}>
                     <h2 className='list-title'>{review.list_name}</h2>
                     {review.books && review.books.length>0 &&(
                         <div className='books-content'>
                             {review.books.map((book)=>(
-                                <div className='content'>
+                                <div className='content' key={book.primary_isbn13}>
                                     <h3>{book.title}</h3>
                                     <p>{book.description}</p>
                                 </div>

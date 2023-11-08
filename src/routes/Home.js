@@ -21,13 +21,12 @@ function Home(){
         fetchArticles();
       }, []);
 
-      
     return(
         <div className='page'>
             <div className='grid-container'>
                 <section className='news-container'>
                   {articles.map((article)=>(
-                    <a href={article.url} className='left-layout'>
+                    <a href={article.url} key={article.id+Math.random()} className='left-layout'>
                       <div className='news-wrapper'>
                         <h2>{article.title}</h2>
                         <p>{article.abstract}</p>
