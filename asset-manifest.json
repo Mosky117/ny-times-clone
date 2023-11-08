@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ny-times-clone/static/css/main.a5187292.css",
-    "main.js": "/ny-times-clone/static/js/main.e26c755e.js",
+    "main.js": "/ny-times-clone/static/js/main.9a1aaaa3.js",
     "static/js/787.fc3f6be1.chunk.js": "/ny-times-clone/static/js/787.fc3f6be1.chunk.js",
     "index.html": "/ny-times-clone/index.html",
     "main.a5187292.css.map": "/ny-times-clone/static/css/main.a5187292.css.map",
-    "main.e26c755e.js.map": "/ny-times-clone/static/js/main.e26c755e.js.map",
+    "main.9a1aaaa3.js.map": "/ny-times-clone/static/js/main.9a1aaaa3.js.map",
     "787.fc3f6be1.chunk.js.map": "/ny-times-clone/static/js/787.fc3f6be1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5187292.css",
-    "static/js/main.e26c755e.js"
+    "static/js/main.9a1aaaa3.js"
   ]
 }
