@@ -29,7 +29,7 @@ function Stories(){
     return(
       <section className='second-news-container'>
           {topStories.map((topStory)=>(
-              <a href={topStory.url} key={KeyGenerator()}>
+              <a href={topStory.url} key={KeyGenerator}>
                   <h3>{topStory.title}</h3>
                   <p>{topStory.abstract}</p>
                   {topStory.multimedia && topStory.multimedia.length>0 &&(
