@@ -5,17 +5,15 @@ import axios from 'axios';
 function OtherNews(){
     const [otherNews, setNews]= useState([]);
     useEffect(()=>{
-        setTimeout(()=>{
-            const fetchOtherNews= async()=>{
-                try {
-                    const res= await axios.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?sort=newest&limit=20&api-key=v6zURJaRSCfU6E18GsR8ve98zlQMCgNB`);
-                    setNews(res.data.response.docs);
-                } catch (e) {
-                    console.log(e);
-                }
-            };
-            fetchOtherNews();
-        },2000)
+        const fetchOtherNews= async()=>{
+            try {
+                const res= await axios.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?sort=newest&limit=20&api-key=v6zURJaRSCfU6E18GsR8ve98zlQMCgNB`);
+                setNews(res.data.response.docs);
+            } catch (e) {
+                console.log(e);
+            }
+        };
+        fetchOtherNews();
     },[])
 
     return (

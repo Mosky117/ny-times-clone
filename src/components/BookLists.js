@@ -24,7 +24,7 @@ function BookReviews(){
                     {review.books && review.books.length>0 &&(
                         <div className='books-content'>
                             {review.books.map((book)=>(
-                                <div className='content' key={book.primary_isbn13}>
+                                <div className='content' key={Math.random()}>
                                     <h3>{book.title}</h3>
                                     <p>{book.description}</p>
                                 </div>

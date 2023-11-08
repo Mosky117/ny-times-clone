@@ -26,7 +26,7 @@ function Home(){
             <div className='grid-container'>
                 <section className='news-container'>
                   {articles.map((article)=>(
-                    <a href={article.url} key={article.id+Math.random()} className='left-layout'>
+                    <a href={article.url} key={article.id} className='left-layout'>
                       <div className='news-wrapper'>
                         <h2>{article.title}</h2>
                         <p>{article.abstract}</p>
