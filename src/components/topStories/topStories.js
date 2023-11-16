@@ -1,4 +1,4 @@
-import '../css/Home.css'
+import './topStories.css';
 import React, { useEffect, useState  } from 'react';
 import axios from 'axios';
 

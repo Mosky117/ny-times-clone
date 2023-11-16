@@ -1,8 +1,8 @@
 import React from "react";
-import '../css/Books.css'
-import '../css/Home.css'
-import Footer from "../components/Footer";
-import BookLists from "../components/BookLists";
+import './Books.css'
+import '../Home/Home.css'
+import Footer from "../../components/Footer/Footer";
+import BookLists from "../../components/BookLists";
 
 const Books = () => (
   <div className="page">

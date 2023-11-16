@@ -1,11 +1,11 @@
-import '../css/Home.css'
+import './Home.css';
 import React, { useEffect, useState  } from 'react';
 import axios from 'axios';
-import Stories from '../components/topStories';
-import MoreNews from '../components/MoreNews';
-import MovieReviews from '../components/MovieReviews';
-import OtherNews from '../components/OtherNews';
-import Footer from '../components/Footer';
+import Stories from '../../components/topStories/topStories';
+import MoreNews from '../../components/MoreNews/MoreNews';
+import MovieReviews from '../../components/MovieReviews/MovieReviews';
+import OtherNews from '../../components/OtherNews/OtherNews';
+import Footer from '../../components/Footer/Footer';
 
 function Home(){
     const [articles, setArticles]=useState([]);

@@ -1,6 +1,6 @@
-import '../css/Home.css'
 import React, { useEffect, useState  } from 'react';
 import axios from 'axios';
+import './MovieReviews.css'
 
 function MovieReviews(){
     const [movies, setMovies]=useState([]);

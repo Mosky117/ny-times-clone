@@ -1,6 +1,6 @@
-import '../css/Home.css'
 import React, { useEffect, useState  } from 'react';
 import axios from 'axios';
+import './OtherNews.css'
 
 function OtherNews(){
     const [otherNews, setNews]= useState([]);

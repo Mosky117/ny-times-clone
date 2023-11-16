@@ -1,7 +1,7 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import Home from './routes/Home';
-import Books from './routes/Books';
+import Navbar from './components/Navbar/Navbar';
+import Home from './routes/Home/Home';
+import Books from './routes/Books/Books';
 import { Route, Routes } from 'react-router-dom';
 import React, {useState} from 'react';
 
