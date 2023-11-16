@@ -9,7 +9,7 @@ function Stories(){
     useEffect(()=>{
       const fetchTopStories= async()=>{
         try{
-          const res= await axios.get(`https://api.nytimes.com/svc/topstories/v2/${subject[Math.floor(Math.random() * 25)]}.json?api-key=v6zURJaRSCfU6E18GsR8ve98zlQMCgNB`);
+          const res= await axios.get(`https://api.nytimes.com/svc/topstories/v2/${subject[Math.floor(Math.random() * 25)]}.json?api-key=${process.env.REACT_APP_API_KEY}`);
           setTopStories(res.data.results.slice(0,15));
         }catch (error){
           console.log(error);

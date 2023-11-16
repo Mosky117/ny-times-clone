@@ -7,7 +7,7 @@ function BookReviews(){
     useEffect(()=>{
         const fetchReviews= async()=>{
             try {
-                const res= await axios.get(`https://api.nytimes.com/svc/books/v3/lists/full-overview.json?api-key=v6zURJaRSCfU6E18GsR8ve98zlQMCgNB`);
+                const res= await axios.get(`https://api.nytimes.com/svc/books/v3/lists/full-overview.json?api-key=${process.env.REACT_APP_API_KEY}`);
                 setReviews(res.data.results.lists.slice(0,5));
             } catch (e) {
                 console.log(e);
