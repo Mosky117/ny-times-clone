@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './routes/Home';
 import Books from './routes/Books';
 import { Route, Routes } from 'react-router-dom';
-import React, { useEffect, useState  } from 'react';
+import React, {useState} from 'react';
 
 function App() {
   const [loading, setLoading]= useState(true);
