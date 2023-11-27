@@ -1,0 +1,116 @@
+.more-news-container{
+    display: grid;
+    grid-column-gap: calc(1rem * 2 + 1px);
+    grid-template-columns: repeat(20,1fr);
+}
+.more-news-container:not(:first-child)::after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid var(--color-stroke-tertiary,#C7C7C7);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    clear: both;
+    grid-column: 1/-1;
+}
+.more-news-left{
+    min-width: 0;
+    position: relative;
+    grid-column: span 14;
+}
+.news-left{
+    display: grid;
+    grid-column-gap: calc(1rem * 2 + 1px);
+    grid-template-columns: repeat(14,1fr);
+}
+.left-box{
+    min-width: 0;
+    position: relative;
+    grid-column: span 5;
+}
+.left-box p{
+    font-size: small;
+}
+.center-box{
+    min-width: 0;
+    position: relative;
+    grid-column: span 9;
+}
+.center-box:not(:first-child)::before  {
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: calc(-1rem - 1px);
+    bottom: 0;
+    border-left: 1px solid var(--color-stroke-tertiary,#C7C7C7);
+}
+.center-box:not(:first-child)::after  {
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: calc(-1rem - 1px);
+    bottom: 0;
+    border-left: 1px solid var(--color-stroke-tertiary,#C7C7C7);
+}
+.center-box img{
+    width: 100%;
+}
+.center-box p{
+    font-size: small;
+}
+
+.more-news-right{
+    min-width: 0;
+    position: relative;
+    grid-column: span 6;
+}
+.news-right{
+    display: grid;
+    grid-column-gap: calc(1rem * 2 + 1px);
+    grid-template-columns: repeat(6,1fr);
+}
+.end-news:not(:first-child)::after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid var(--color-stroke-tertiary,#C7C7C7);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    clear: both;
+    grid-column: 1/-1;
+}
+
+@media only screen and (min-device-width:250px) and (max-device-width: 500px) {
+    .page{
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+    .more-news-container{
+        display: block;
+    }
+    .news-left{
+        display: flex;
+    }
+    .left-box{
+        display: block;
+    }
+    .center-box{
+        display: block;
+    }
+    
+    
+}
+
+@media only screen and (min-device-width:501px) and (max-device-width: 960px){
+    .more-news-container{
+        display: block;
+    }
+    .news-left{
+        display: flex;
+    }
+    .left-box{
+        display: block;
+    }
+    .center-box{
+        display: block;
+    }
+}

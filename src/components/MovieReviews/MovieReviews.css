@@ -1,0 +1,33 @@
+.movies{
+    display: flex;
+    justify-content: space-around;
+    font-size: small;
+}
+.movies img{
+    width: 180px;
+    height: 140px;
+}
+.reviews{
+    width: 150px;
+    height: 100px;
+}
+
+@media only screen and (min-device-width:250px) and (max-device-width: 500px) {
+    .movies{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 10px;
+        
+    }
+    .reviews{
+        margin-bottom: 70%;
+    }
+}
+
+@media only screen and (min-device-width:501px) and (max-device-width: 960px){
+    .movies{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 50%;
+    }
+}
