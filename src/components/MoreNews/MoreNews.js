@@ -38,7 +38,7 @@ function MoreNews(){
                         </div>
                     )}
 
-                    {moreNews[3] &&(
+                    {moreNews[3] && moreNews[3].multimedia.length>0 &&(
                         <div className='center-box'>
                             <a href={moreNews[3].url}>
                                 <img src={moreNews[3].multimedia[2].url} alt=''></img>
