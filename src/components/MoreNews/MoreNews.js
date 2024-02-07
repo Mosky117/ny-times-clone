@@ -7,7 +7,7 @@ function MoreNews(){
     useEffect(()=>{
         const fetchMoreNews= async()=>{
             try {
-                const res= await axios.get(`https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=v6zURJaRSCfU6E18GsR8ve98zlQMCgNB`);
+                const res= await axios.get(`https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=${process.env.REACT_APP_APIKEY}`);
                 setMoreNews(res.data.results.slice(0,10));
             } catch (e) {
                 console.log(e);

@@ -7,7 +7,7 @@ function MovieReviews(){
     useEffect(()=>{
         const fetchMovies= async()=>{
             try {
-                const res= await axios.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=section_name%3A"Movies" AND type_of_material%3A"Review"&sort=newest&page=0&api-key=v6zURJaRSCfU6E18GsR8ve98zlQMCgNB`);
+                const res= await axios.get(`https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=section_name%3A"Movies" AND type_of_material%3A"Review"&sort=newest&page=0&api-key=${process.env.REACT_APP_APIKEY}`);
                 setMovies(res.data.response.docs.slice(0,5));
             } catch (e) {
                 console.log(e);

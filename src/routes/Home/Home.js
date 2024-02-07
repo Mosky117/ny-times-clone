@@ -12,7 +12,7 @@ function Home(){
     useEffect(() => {
         const fetchArticles= async () => {
           try {
-            const res= await axios.get(`https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=v6zURJaRSCfU6E18GsR8ve98zlQMCgNB`);
+            const res= await axios.get(`https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=${process.env.REACT_APP_APIKEY}`);
             setArticles(res.data.results);
           } catch (error) {
             console.error(error);
