@@ -3,7 +3,6 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './routes/Home/Home';
 import Books from './routes/Books/Books';
 import { Route, Routes } from 'react-router-dom';
-import React, {useState} from 'react';
 
 function App() {
   const spinner= document.getElementById('spinner');
